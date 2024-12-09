@@ -34,6 +34,6 @@ def create_gradio_interface():
         submit_btn.click(get_model_response, inputs=[api_key_input, user_input], outputs=output)
         clear_btn.click(lambda: "", None, output)
 
-    demo.launch(server_name="0.0.0.0", server_port=8080)
+    demo.launch(server_name="0.0.0.0", server_port=3000)
 
 create_gradio_interface()
